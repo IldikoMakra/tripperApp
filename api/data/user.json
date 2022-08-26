@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "userName": "Boti",
+    "city": "JKL",
+    "age": "28",
+    "imageUrl": "images/boti.png",
+    "email": "boti@bmail.com"
+  },
+  {
+    "id": "2",
+    "userName": "Sara",
+    "city": "JKL",
+    "age": "5",
+    "imageUrl": "images/sara.png",
+    "email": "sara@smail.com"
+  },
+  {
+    "id": "3",
+    "userName": "TesterX",
+    "city": "JKL",
+    "age": "44",
+    "imageUrl": "images/testerX.png",
+    "email": "tester@tmail.com"
+  }
+]

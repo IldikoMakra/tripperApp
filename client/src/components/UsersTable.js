@@ -1,0 +1,48 @@
+import React, { useState, useEffect } from "react";
+import { Table } from "react-bootstrap";
+import Avatar from "./Avatar";
+import usersService from "../services/user-service";
+
+const UsersTable = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    usersService.getAllUsers().then(
+      (response) => {
+        setUsers(response.data.users);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }, []);
+
+  return (
+    <div>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user._id}>
+              <td>{user.userName}</td>
+              <td>{user.city}</td>
+              <td>{user.age}</td>
+              <td>
+                <Avatar src={user.image} alt="" />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+    </div>
+  );
+};
+
+export default UsersTable;

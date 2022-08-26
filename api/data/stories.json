@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "userName": "Boti",
+    "date": "03-08-2022",
+    "target": "Tampere",
+    "title": "A day in Tampere",
+    "content": "Here comes a longer story about the details of our adventure.",
+    "imageUrl": "images/tampere.png"
+  },
+  {
+    "id": "1",
+    "userName": "Sara",
+    "date": "01-08-2022",
+    "target": "Budapest",
+    "title": "A holiday in Budapest",
+    "content": "Here comes a longer story about the details of our adventure.",
+    "imageUrl": "images/budapest.png"
+  },
+  {
+    "id": "1",
+    "userName": "TesterX",
+    "date": "02-08-2022",
+    "target": "Helsinki",
+    "title": "A week in Helsinki",
+    "content": "Here comes a longer story about the details of our adventure.",
+    "imageUrl": "images/helsinki.png"
+  }
+]

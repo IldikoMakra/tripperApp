@@ -1,0 +1,13 @@
+.login-style {
+  background-color: blanchedalmond;
+
+  display: flexbox;
+  align-content: center;
+}
+
+.card-style {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  width: 20rem;
+  box-shadow: 0px 0px 15px -5px black;
+}
