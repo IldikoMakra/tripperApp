@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  api:
+    restart: unless-stopped
+    image: makra.azurecr.io/tripper-api-prod:1.0.0
+    build: ./api
+    ports:
+      - 5000:5000
+  client:
+    restart: unless-stopped
+    image: makra.azurecr.io/tripper-client-prod:1.0.1
+    container_name: client
+    build: ./client
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
+    depends_on:
+      - api
+    command: npm start
