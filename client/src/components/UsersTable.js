@@ -4,6 +4,9 @@ import Avatar from "./Avatar";
 import usersService from "../services/user-service";
 
 const UsersTable = () => {
+  const apiFolder1 = "https://tripper.azurewebsites.net/uploads/";
+  const apiFolder2 = "http://localhost:5000/uploads/";
+
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -35,7 +38,7 @@ const UsersTable = () => {
               <td>{user.city}</td>
               <td>{user.age}</td>
               <td>
-                <Avatar src={user.image} alt="" />
+                <Avatar src={apiFolder1 + user.imageUrl} alt="" />
               </td>
             </tr>
           ))}

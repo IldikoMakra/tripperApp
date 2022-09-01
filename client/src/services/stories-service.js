@@ -3,7 +3,7 @@ import authHeader from "./auth-header";
 import authService from "./auth-service";
 
 // const API_URL = "http://localhost:5000/api/stories";
-const API_URL = "https://tripperapi.azurewebsites.net/api/stories";
+const API_URL = "https://tripper.azurewebsites.net/api/stories";
 const logged = authService.getCurrentUser();
 
 const getAllStories = () => {
@@ -18,7 +18,7 @@ const createStory = (target, title, content) => {
   return axios.post(
     API_URL,
     { target, title, content, postedBy: logged.user },
-    { headers: authHeader() }
+    { headers: { "Content-Type": "multipart/form-data" } }
   );
 };
 

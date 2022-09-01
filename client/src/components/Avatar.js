@@ -1,10 +1,10 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 
-const Avatar = (props) => {
+const Avatar = ({ src }) => {
   return (
     <div>
-      <Image src={props.src} alt="" width="44" height="44" roundedCircle />
+      <Image src={src} alt="" width="44" height="44" roundedCircle />
     </div>
   );
 };
