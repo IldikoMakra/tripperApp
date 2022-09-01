@@ -6,6 +6,8 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/user-model");
 const { registerValidation, loginValidation } = require("./validation");
 
+const path = require("path");
+
 // @desc    Post New User
 // @route   POST /api/users/signup
 // @access  UI public
@@ -107,8 +109,9 @@ const loginUser = async (req, res) => {
 // @access  Postman only, public - TO BE TESTED!
 const getUserById = async (req, res) => {
   try {
-    const user = await User.findById(id, "name");
-    res.status(200).json({ status: "success", name: user });
+    id = req.params.id;
+    const user = await User.findById(id);
+    res.status(200).json({ status: "success", details: user });
   } catch (err) {
     res.status(400).json({ status: "error", error: err });
   }
@@ -116,21 +119,20 @@ const getUserById = async (req, res) => {
 
 // @desc    Update User Data
 // @route   PATCH /api/users/:name
-// @access  Postman only, public
+// @access  Postman first, without protection
 const updateUser = async (req, res) => {
   try {
+    console.log(req.file);
     const filter = req.params;
-
-    const update = {
-      city: req.body.city,
-      age: req.body.age,
-      imageUrl: req.body.imageUrl,
-    };
-
-    const result = await User.findOneAndUpdate(filter, update, { new: true });
+    const update = { imageUrl: req.file.filename };
+    const result = await User.findOneAndUpdate(
+      filter,
+      { $set: update },
+      { new: true }
+    );
 
     res
-      .status(400)
+      .status(200)
       .json({ status: "success", user: result, msg: "user updated" });
   } catch (error) {
     console.log(error.details[0]);
@@ -158,6 +160,22 @@ const resetPassword = async (req, res) => {
   }
 };
 
+// @desc    Upload a User Image
+// @route   POST /api/users/upload
+// @access  Postman only - for upload test
+const uploadImage = async (req, res) => {
+  console.log(req.file);
+  const user = new User({
+    userName: req.body.userName,
+    email: req.body.email,
+    password: req.body.password,
+    imageUrl: req.file.filename,
+  });
+  const savedUser = await user.save();
+  console.log(savedUser);
+  res.status(201).json({ msg: "User image uploaded successfully." });
+};
+
 // @desc    Delete a User
 // @route   DELETE /api/users/:id
 // @access  Postman only, public - REVISION REQUIRED from mock to real DB!
@@ -177,5 +195,6 @@ module.exports = {
   getUserById,
   deleteUser,
   updateUser,
+  uploadImage,
   resetPassword,
 };

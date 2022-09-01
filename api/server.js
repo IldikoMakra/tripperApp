@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const port = process.env.PORT || 5000;
 const usersRoutes = require("./routes/users-routes");
 const storiesRoutes = require("./routes/stories-routes");
+const path = require("path");
 
 const connectDB = require("./data/connection");
 require("dotenv/config");
@@ -12,6 +13,7 @@ connectDB();
 
 //Middlewares
 app.use(bodyParser.json());
+app.use("/uploads", express.static("./uploads"));
 app.use(morgan("tiny"));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
