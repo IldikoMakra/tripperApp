@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //Routes
-app.get("/", (req, res) => res.send("TripStories API Home Page"));
+app.get("/", (req, res) => res.send("TripStories API Version 1.0.2"));
 
 app.use("/api/users", usersRoutes);
 app.use("/api/stories", storiesRoutes);
