@@ -7,7 +7,7 @@ Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakou
    
 Sovelluksen perusideana oli tehdä MERN-stackilla single page-sovellus Pyöräretket, jolla käyttäjä pääsee selailemaan kirjautuneiden käyttäjien tekemiä pyöräretkiä ja lisätä niitä itse. Käyttöliittymä on englanninkielinen ja sitä koskeva alkuperäinen vaatimusmäärittely näkyy kuvassa alla.
 
-Kuva
+![tripperUI.png](https://github.com/IldikoMakra/tripperApp/blob/cab5b8d2ae8ecafc1699e5deda14af92a02519da/tripperUI.png)
 
 
 API:n liittyvät vaatimukset näkyvät tässä kuvassa
