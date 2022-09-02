@@ -12,7 +12,7 @@ Kuva
 
 API:n liittyvät vaatimukset näkyvät tässä kuvassa
 
-Kuva  
+![tripper-api.png](https://github.com/IldikoMakra/tripperApp/blob/a2199ca0ea026f77345d92d1b62b39385c3e4543/tripper-api.png) 
 
 
 ## Tuoreimmat ominaisuudet
