@@ -1,10 +1,18 @@
 # Pyöräretket
 
 Hei,
-Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakoulusta. Tämä full stack ohjelmistoprojekti on tehty 2022 kesän opintojaksoa varten, joka oli viimeinen opintojaksosuoritukseni ennen opinnäytetyön aloittamista. Projekti ei tiimityönä vaan itsenäisesti oli suoritettava. Alla kuvailen kurssin perusvaatimuksia. Tehtäväpalautuksen jälkeen sovelluksen kehitys jatkuu edelleen. Tuorein versio oli julkistettu 1.9.2022. Teknologiana React ja NodeJs Express, tietokantana MongoDB Atlas. Sekä API, että React sovellus on kontitettu Dockerilla ja laitettu pyörimään Azure pilveeseen. Testattavissa oleva versio löytyy täältä.
+Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakoulusta. Tämä full stack ohjelmistoprojekti on tehty 2022 kesän opintojaksoa varten. Kehitys jatkuu edelleen. 
 
-   [https://tripperwebapp.azurewebsites.net](https://tripperwebapp.azurewebsites.net)
-   
+## Teknologiat
+
+ React ja NodeJs Express, tietokantana MongoDB Atlas
+ 
+ ## Viimein versio julkaistu 1.9.2022.
+
+   [https://radiant-marshmallow-064737.netlify.app/](https://radiant-marshmallow-064737.netlify.app/)
+ 
+ ## Määrittely
+ 
 Sovelluksen perusideana oli tehdä MERN-stackilla single page-sovellus Pyöräretket, jolla käyttäjä pääsee selailemaan kirjautuneiden käyttäjien tekemiä pyöräretkiä ja lisätä niitä itse. Käyttöliittymä on englanninkielinen ja sitä koskeva alkuperäinen vaatimusmäärittely näkyy kuvassa alla.
 
 ![tripperUI.png](https://github.com/IldikoMakra/tripperApp/blob/cab5b8d2ae8ecafc1699e5deda14af92a02519da/tripperUI.png)
