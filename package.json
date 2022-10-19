@@ -1,17 +1,18 @@
 {
-  "name": "mernstacktripper",
-  "version": "1.0.0",
+  "name": "mern-tripper-app",
+  "version": "1.0.2",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node api/server.js",
+    "server": "nodemon api/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "",
+  "author": "Ildiko Makra",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
-    "concurrently": "^7.3.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-jwt": "^5.3.3",
@@ -24,7 +25,8 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
+    "concurrently": "^7.4.0",
     "nodemon": "^2.0.4"
   },
-  "description": ""
+  "description": "School project: a mern app for posting about biking tours"
 }

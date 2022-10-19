@@ -13,7 +13,7 @@ connectDB();
 
 //Middlewares
 app.use(bodyParser.json());
-app.use("/uploads", express.static("./uploads"));
+app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
 app.use(morgan("tiny"));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -28,14 +28,23 @@ app.use((req, res, next) => {
   next();
 });
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-
 //Routes
-app.get("/", (req, res) => res.send("TripStories API Version 1.0.2"));
+//app.get("/", (req, res) => res.send("TripStories API Version 1.0.2"));
 
 app.use("/api/users", usersRoutes);
 app.use("/api/stories", storiesRoutes);
+
+// Serve frontend
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+
+  app.get("*", (req, res) =>
+    res.sendFile(
+      path.resolve(__dirname, "../", "client", "build", "index.html")
+    )
+  );
+} else {
+  app.get("/", (req, res) => res.send("Please set environment to production"));
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));

@@ -4,8 +4,7 @@ import Avatar from "./Avatar";
 import usersService from "../services/user-service";
 
 const UsersTable = () => {
-  const apiFolder1 = "https://tripper.azurewebsites.net/uploads/";
-  const apiFolder2 = "http://localhost:5000/uploads/";
+  const apiFolder1 = "http://localhost:5000/uploads/";
 
   const [users, setUsers] = useState([]);
 

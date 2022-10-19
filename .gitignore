@@ -1,0 +1,12 @@
+
+node_modules
+/api/node modules
+/api/Dockerfile
+/client/node_modules
+/client/build
+/client/Dockerfile
+/frontend
+
+docker-compose.yml
+commands.txt
+.env
