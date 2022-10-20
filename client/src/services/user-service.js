@@ -4,7 +4,8 @@ import authUserName from "./auth-userName";
 import authUserID from "./auth-userID";
 
 const API_URL_2 = "https://tripper.azurewebsites.net/api/users";
-const API_URL = "http://localhost:5000/api/users";
+const API_URL_1 = "http://localhost:5000/api/users";
+const API_URL = "/api/users";
 
 const getAllUsers = () => {
   return axios.get(API_URL);
