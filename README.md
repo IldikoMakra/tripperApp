@@ -1,7 +1,11 @@
 # Pyöräretket
 
 Hei,
-Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakoulusta. Tämä full stack ohjelmistoprojekti on tehty 2022 kesän opintojaksoa varten. Kehitys jatkuu edelleen. 
+Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakoulusta. Tämä full stack ohjelmistoprojekti on tehty 2022 kesän opintojaksoa varten. Kehitys ja testaus jatkuu edelleen. 
+
+## Demo
+
+[Pyöräretket-App-Demo-cPouta-Pilvessä](http://86.50.228.217/)
 
 ## Teknologiat
 
