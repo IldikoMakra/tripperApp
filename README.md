@@ -3,7 +3,7 @@
 Hei,
 Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakoulusta. Tämä full stack ohjelmistoprojekti on tehty 2022 kesän opintojaksoa varten. Kehitys ja testaus jatkuu edelleen. 
 
-## Demo
+## Julkaistu Demoversio
 
 [Pyöräretket-App-Demo-cPouta-Pilvessä](http://86.50.228.217/)
 
@@ -11,10 +11,7 @@ Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakou
 
  React ja NodeJs Express, tietokantana MongoDB Atlas
  
- ## Viimein versio julkaistu 1.9.2022.
-
-   [https://radiant-marshmallow-064737.netlify.app/](https://radiant-marshmallow-064737.netlify.app/)
- 
+  
  ## Määrittely
  
 Sovelluksen perusideana oli tehdä MERN-stackilla single page-sovellus Pyöräretket, jolla käyttäjä pääsee selailemaan kirjautuneiden käyttäjien tekemiä pyöräretkiä ja lisätä niitä itse. Käyttöliittymä on englanninkielinen ja sitä koskeva alkuperäinen vaatimusmäärittely näkyy kuvassa alla.
