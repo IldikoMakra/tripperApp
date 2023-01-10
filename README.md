@@ -1,19 +1,20 @@
 # The Tripper App
 
-Hei,
-Olen Ildikó Makra, ohjelmistotekniikan opiskelija Jyväskylän ammattikorkeakoulusta. Tämä full stack ohjelmistoprojekti on tehty 2022 kesän opintojaksoa varten. Kehitys ja testaus jatkuu edelleen.
-
-## Julkaistu Demoversio
-
-[Pyöräretket-App-Demo-cPouta-Pilvessä](http://86.50.228.217/)
+This is one of my school projects, a MERN app for posting stories about cycle trips. Some features are public, others require a user account in order to access.
 
 ## Table of contents
 
-React ja NodeJs Express, tietokantana MongoDB Atlas
+  - [The Tripper App](#the-tripper-app)
+  - [Table of contents](#table-of-contents)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [API endpoints](#api-endpoints)
+  - [React Components](#react-components)
+  - [Testing](#testing)
+  - [Demo](#demo)
 
-## Määrittely
+## Technologies
 
-Sovelluksen perusideana oli tehdä MERN-stackilla single page-sovellus Pyöräretket, jolla käyttäjä pääsee selailemaan kirjautuneiden käyttäjien tekemiä pyöräretkiä ja lisätä niitä itse. Käyttöliittymä on englanninkielinen ja sitä koskeva alkuperäinen vaatimusmäärittely näkyy kuvassa alla.
 
 - Frontend: React
 - Backend: Node Express
