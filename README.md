@@ -15,7 +15,6 @@ This is one of my school projects, a MERN app for posting stories about cycle tr
 
 ## Technologies
 
-
 - Frontend: React
 - Backend: Node Express
 - Database: Mongo Atlas
@@ -29,7 +28,25 @@ This is one of my school projects, a MERN app for posting stories about cycle tr
 - Post a new story (users only)
 - Edit posted story (users only)
 
-## API endpoints
+
+
+## React Components
+
+Layout components and pages are directly connected to App.js while the components are connected to the different pages as shown in the image below.
+
+![component-diagram](Component-Diagram.png)
+
+## Testing
+
+Example Users for testing (Anna, Beata, Clara)
+
+- User 1: Anna, annA123
+- User 2: Beata, beatA456
+- User 3: Clara, clarA789
+
+### API endpoints
+
+API can be tested with Postman. Use **http://86.50.228.217** as the base url, and test the following endpoints:
 
 **GET /api/stories/all** - Get all stories from the DB
 
@@ -55,20 +72,15 @@ This is one of my school projects, a MERN app for posting stories about cycle tr
 
 **DELETE /api/users/:id** - Delete a user - **Private**
 
-## React Components
-
-Layout components and pages are directly connected to App.js while the components are connected to the different pages as shown in the image below.
-
-![component-diagram](Component-Diagram.png)
-
-## Testing
-
-Example Users for testing (Anna, Beata, Clara)
-
-- User 1: Anna, annA123
-- User 2: Beata, beatA456
-- User 3: Clara, clarA789
+Some API endpoints are  under testing and not yet built in the UI.
 
 ## Demo
 
+There is a live version of this app, deployed manually on a ubuntu virual server in the cPouta cloud:
+
 [Link to the live version](http://86.50.228.217/)
+
+## Further Improvemments
+
+- Testing exercises with Cypress and Robot Framework
+- Building some tests into Jenkins pipeline
