@@ -7,11 +7,12 @@ This is one of my school projects, a MERN app for posting stories about cycle tr
   - [The Tripper App](#the-tripper-app)
   - [Table of contents](#table-of-contents)
   - [Technologies](#technologies)
-  - [Features](#features)
-  - [API endpoints](#api-endpoints)
+  - [Features](#features)  
   - [React Components](#react-components)
+  - [API endpoints](#api-endpoints)
   - [Testing](#testing)
   - [Demo](#demo)
+  - [Further Improvements](#further-improvements)
 
 ## Technologies
 
@@ -72,7 +73,7 @@ API can be tested with Postman. Use **http://86.50.228.217** as the base url, an
 
 **DELETE /api/users/:id** - Delete a user - **Private**
 
-Some API endpoints are  under testing and not yet built in the UI.
+Some API endpoints are tested only with Postman but not yet built in as a UI feature.
 
 ## Demo
 
@@ -80,7 +81,7 @@ There is a live version of this app, deployed manually on a ubuntu virual server
 
 [Link to the live version](http://86.50.228.217/)
 
-## Further Improvemments
+## Further Improvements
 
 - Testing exercises with Cypress and Robot Framework
-- Building some tests into Jenkins pipeline
+- Building some tests into a Jenkins pipeline
